@@ -1,0 +1,73 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Formulario.aspx.cs" Inherits="LA.Formulario" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+  <div>
+                <h2><asp:Label ID="LabelTitulo" runat="server" Text="Encuesta de Perfumes"></asp:Label></h2>
+                <br />
+                <asp:Label ID="LabelNombre" runat="server" Text="Nombre:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox><br /><br />
+                <asp:Label ID="LabelEdad" runat="server" Text="Edad:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtEdad" runat="server" TextMode="Number"></asp:TextBox><br /><br />
+                <asp:Label ID="LabelGenero" runat="server" Text="Género:"></asp:Label>
+                <asp:RadioButtonList ID="rblGenero" runat="server">
+                    <asp:ListItem Text="Masculino" Value="Masculino"></asp:ListItem>
+                    <asp:ListItem Text="Femenino" Value="Femenino"></asp:ListItem>
+                </asp:RadioButtonList><br /><br />
+                <asp:Label ID="LabelUsaPerfume" runat="server" Text="¿Usas perfume regularmente?"></asp:Label>
+                <asp:RadioButtonList ID="rblUsaPerfume" runat="server">
+                    <asp:ListItem Text="Sí" Value="Si"></asp:ListItem>
+                    <asp:ListItem Text="No" Value="No"></asp:ListItem>
+                </asp:RadioButtonList><br /><br />
+                <asp:Label ID="LabelTipoPerfume" runat="server" Text="¿Qué tipo de perfume prefieres?"></asp:Label>
+                <br />
+                <asp:DropDownList ID="ddlTipoPerfume" runat="server">
+                    <asp:ListItem Text="Floral"></asp:ListItem>
+                    <asp:ListItem Text="Fresco"></asp:ListItem>
+                    <asp:ListItem Text="Oriental"></asp:ListItem>
+                    <asp:ListItem Text="Amaderado"></asp:ListItem>
+                    <asp:ListItem Text="Cítrico"></asp:ListItem>
+                </asp:DropDownList><br /><br />
+                <asp:Label ID="LabelMarcaPerfume" runat="server" Text="¿Cuál es tu marca de perfume favorita?"></asp:Label>
+                <br />
+                <asp:DropDownList ID="ddlMarcaPerfume" runat="server">
+                    <asp:ListItem Text="Selecciona una marca"></asp:ListItem>
+                    <asp:ListItem Text="Chanel"></asp:ListItem>
+                    <asp:ListItem Text="Dior"></asp:ListItem>
+                    <asp:ListItem Text="Gucci"></asp:ListItem>
+                    <asp:ListItem Text="Versace"></asp:ListItem>
+                    <asp:ListItem Text="Calvin Klein"></asp:ListItem>
+                    <asp:ListItem Text="Armani"></asp:ListItem>
+                    <asp:ListItem Text="Jean Paul Gaultier (JPG)"></asp:ListItem>
+                    <asp:ListItem Text="Dolce & Gabbana"></asp:ListItem>
+                    <asp:ListItem Text="Burberry"></asp:ListItem>
+                    <asp:ListItem Text="Yves Saint Laurent (YSL)"></asp:ListItem>
+                    <asp:ListItem Text="Lancôme"></asp:ListItem>
+                    <asp:ListItem Text="Prada"></asp:ListItem>
+                    <asp:ListItem Text="Marc Jacobs"></asp:ListItem>
+                    <asp:ListItem Text="Givenchy"></asp:ListItem>
+                    <asp:ListItem Text="Carolina Herrera"></asp:ListItem>
+                    <asp:ListItem Text="Hermes"></asp:ListItem>
+                    <asp:ListItem Text="Hugo Boss"></asp:ListItem>
+                    <asp:ListItem Text="Ralph Lauren"></asp:ListItem>
+                    <asp:ListItem Text="Tom Ford"></asp:ListItem>
+                    <asp:ListItem Text="Estée Lauder"></asp:ListItem>
+                </asp:DropDownList><br /><br />
+                <asp:Button ID="btnEnviar" runat="server" Text="Enviar" OnClick="btnEnviar_Click" />
+            </div>
+            <div>
+                <br />
+                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+            </div>
+    </form>
+</body>
+</html>
