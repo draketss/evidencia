@@ -1,0 +1,10 @@
+            string nombre, edad, tipoPerfume, marcaPerfume;
+            nombre = txtNombre.Text;
+            edad = txtEdad.Text;
+            tipoPerfume = ddlTipoPerfume.SelectedItem.Text;
+            marcaPerfume = ddlMarcaPerfume.SelectedItem.Text;
+
+            lblMensaje.Text = "Nombre: " + nombre + "<br />" +
+                              "Edad: " + edad + "<br />" +
+                              "Tipo de perfume preferido: " + tipoPerfume + "<br />" +
+                              "Marca de perfume favorita: " + marcaPerfume;
